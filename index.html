@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-once@2.2.3/jquery.once.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/header-sticky.css">
+    <link rel="stylesheet" href="./css/common-v2.css">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div id="header" class="header-light">
+    <div class="container">
+      <div class="region-header">
+        <div id="site-logo">
+          <a href="https://stg-cms-v2.vinfastauto.ca/en">
+            <img
+              class="logo-light d-none d-lg-block active"
+              src="./images/icons/logo-light.svg"
+              alt="VinFast"
+              data-cookiecategory="86"
+            />
+            <img
+              class="logo-dark d-none d-lg-block"
+              src="./images/icons/logo-dark.svg"
+              alt="VinFast"
+              data-cookiecategory="86"
+            />
+            <img
+              class="logo-light d-block d-lg-none active"
+              src="./images/icons/logo-light-mobile.svg"
+              alt="VinFast"
+              data-cookiecategory="86"
+            />
+            <img
+              class="logo-dark d-block d-lg-none"
+              src="./images/icons/logo-dark-mobile.svg"
+              alt="VinFast"
+              data-cookiecategory="86"
+            />
+          </a>
+        </div>
+        <div id="vehicles-nav" class="d-none d-lg-block">
+          <ul>
+            <li>
+              <a
+                href="/en/vehicles/vf-8"
+                class="link-effect link-effect-hover"
+              >
+                <span class="field-image"
+                  ><img
+                    src="./images/icons/vf-8-header.webp"
+                    alt="VF 8"
+                    data-cookiecategory="86"
+                /></span>
+                <span class="field-title">VF 8</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/en/vehicles/vf-9"
+                class="link-effect link-effect-hover"
+              >
+                <span class="field-image"
+                  ><img
+                    src="./images/icons/vf-9-header.webp"
+                    alt="VF 9"
+                    data-cookiecategory="86"
+                /></span>
+                <span class="field-title">VF 9</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="site-header-region">
+          <div id="header-reservation" class="d-none d-lg-block">
+            <a
+              href="https://uat-rh.vinfastauto.ca/en"
+              class="btn btn--animated btn--primary--blue btn--border--blue"
+              >RESERVE YOURS NOW!</a
+            >
+          </div>
+          <div id="header-hambuger-menu">
+            <a href="javascript:void(0)" class="navbar-toggle">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="page-header" class="page-header">
+    <div class="nav container">
+      <a href="" class="nav-logo">
+        <img src="/{{ directory }}/images/logo-light.svg" alt="" />
+      </a>
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item link-effect link-effect-hover">
+            <a href="">Benefits</a>
+          </li>
+          <li class="nav-item link-effect link-effect-hover">
+            <a href="">Warranty</a>
+          </li>
+          <li class="nav-item link-effect link-effect-hover">
+            <a href="">Accessories</a>
+          </li>
+          <li class="nav-item link-effect link-effect-hover">
+            <a href="">Services</a>
+          </li>
+          <li class="nav-item link-effect link-effect-hover">
+            <a href="">Companion app</a>
+          </li>
+          <li class="nav-item link-effect link-effect-hover">
+            <a href="">Location</a>
+          </li>
+          <li class="nav-item link-effect link-effect-hover">
+            <a href="">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-dropdown d-block d-lg-none">
+        <button>
+          Vehicle design
+        <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 1L9 9L1 1" stroke="#1464F4" stroke-width="1.5"/>
+        </svg>
+        </button>
+      </div>
+      <div class="nav-button">
+        <a href="" class="btn btn--animated btn--primary--blue btn--border--blue">Configure</a>
+      </div>
+    </div>
+  </div>
+  <div id="main" class="main clearfix">
+    <div id="block-banner" class="block-banner block">
+      <div class="field-header">
+        <div class="container">
+          <h2>
+            <b>Vinfast’s ownership</b>
+            <br> 
+            experience
+          </h2>
+          <p class="field-header-desc col-12 col-md-7 col-lg-6">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+            Nunc vulputate libero et velit interdum, ac aliquet odio</p>
+        </div>
+      </div>
+      <div class="field-img"></div>
+    </div>
+    <div id="block-benefits" class="block-benefits block">
+      <div class="container">
+        <div class="field-header">
+          <h2>
+            <b>Vinfast’s ownership</b> has
+            <br> 
+            its own benefits
+          </h2>
+          <p class="col-12 col-md-7 col-lg-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad</p>
+        </div>
+        <div class="field-content slider">
+          <div class="slides">
+            <div class="field-content-item col-12 col-lg-4">
+              <div class="field-image">
+                <picture>
+                  <source srcset="./images/warranty.webp" type="image/webp" width="100%" height="100%" alt="" />
+                  <source srcset="./images/warranty.jpg" alt="" />
+                  <img src="./images/technology/warranty.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="field-content-detail">
+                <h3>Warranty program</h3>
+                <p>Lorem Ipsum is simplLorem Ipsum is simply duas text of the printing and typesa</p>
+              </div>
+            </div>
+            <div class="field-content-item col-12 col-lg-4">
+              <div class="field-image">
+                <picture>
+                  <source srcset="./images/home-delivery.webp" type="image/webp" width="100%" height="100%" alt="" />
+                  <source srcset="./images/home-delivery.jpg" alt="" />
+                  <img src="./images/home-delivery.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="field-content-detail">
+                <h3>Home delivery</h3>
+                <p>Lorem Ipsum is simplLorem Ipsum is simply duas text of the printing and typesa</p>
+              </div>
+            </div>
+            <div class="field-content-item col-12 col-lg-4">
+              <div class="field-image">
+                <picture>
+                  <source srcset="./images/geniuine-maintenance.webp" type="image/webp" width="100%" height="100%" alt="" />
+                  <source srcset="./images/geniuine-maintenance.jpg" alt="" />
+                  <img src="./images/geniuine-maintenance.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="field-content-detail">
+                <h3>Geniuine vehicle maintenance</h3>
+                <p>Lorem Ipsum is simplLorem Ipsum is simply duas text of the printing and typesa</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="block-warranty" class="block-warranty block">
+      <div class="field-content container">
+        <div class="field-content-left col-12 col-lg-5">
+          <div class="top-item">
+            <h2>
+              <b>Our vehicle</b><br>
+              warranty programm
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet
+            </p>
+          </div>
+          <div class="center-item d-none d-md-block">
+            <ul>
+              <li>
+                <p>5yr or 60,000mi</p>
+                <span>comprehensive</span>
+              </li>
+              <li>
+                <p>8yr or 175,000mi</p>
+                <span>battery</span>
+              </li>
+              <li>
+                <p>5yr or 60,000mi</p>
+                <span>drivetrain</span>
+              </li>
+              <li>
+                <p>8yr unlimited miles</p>
+                <span>corrosion</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom-item d-none d-md-block">
+            <p>
+              Warranties are based on whichever comes first. A full list of warranty coverage will be located in the Warranty Guide prior to production vehicles being available for purchase.
+            </p>
+          </div>
+        </div>
+        <div class="field-img col-12 col-lg-6">
+          <div class="field-img-content">
+            <img src="./images/ten-years.png" alt="" />
+          </div>
+        </div>
+        <div class="field-content-mobile d-block d-md-none">
+          <ul>
+            <li>
+              <p>10yr or 175,000mi</p>
+              <span>battery</span>
+            </li>
+            <li>
+              <p>5yr or 60,000mi</p>
+              <span>comprehensive</span>
+            </li>
+            <li>
+              <p>4 yr or 20,00mi unlimited</p>
+              <span>corrosion</span>
+            </li>
+            <li>
+              <p>9 yr or 175,000mi</p>
+              <span>drivetrain</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="block-genuine" class="block-genuine block">
+      <div class="container">
+        <div class="field-header col-12 col-lg-8 col-xl-7">
+          <h2>
+            <b>Genuine</b><br class="d-block d-lg-none"> Accessories & Parts
+          </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora </p>
+        </div>
+        <div class="field-content">
+          <div class="field-content-left">
+            <h3>Keep your VinFast PIMP</h3>
+            <p>When we develop our cars, we always focus on the details. The additionals range will keep</p>
+            <a href="" class="btn btn--animated btn--primary--blue btn--border--blue" target="_blank">coming soon</a>
+          </div>
+          <div class="field-content-right">
+            <picture>
+              <source srcset="./images/pimp.webp" type="image/webp" width="100%" height="100%" alt="VinFast PIMP" />
+              <source srcset="./images/pimp.jpg" alt="VinFast PIMP" />
+              <img src="./images/technology/pimp.jpg" alt="" />
+            </picture>
+          </div>
+      </div>
+      </div>
+    </div>
+    <div id="block-service" class="block-service block">
+      <div class="container">
+        <div class="field-header col-12 col-lg-4">
+          <h2>
+            <b>We are here</b><br>
+            When you need us
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet 
+          </p>
+        </div>
+        <div class="field-content">
+          <div class="field-slide swiper d-none d-lg-block">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide-img1"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-img2"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-img3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="field-slide-detail">
+            <div class="slide-detail slide-detail-1 active">
+              <div class="slide-detail-title">
+                <h3>Over the air update</h3>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="16" cy="16" r="16" fill="#1464F4" fill-opacity="0.03"/>
+                  <circle cx="16" cy="16" r="15.5" stroke="#3C3C3C" stroke-opacity="0.3"/>
+                  <line x1="16.5" y1="11" x2="16.5" y2="22" stroke="#1464F4"/>
+                  <line x1="11" y1="16.5" x2="22" y2="16.5" stroke="#1464F4"/>
+                </svg>
+              </div>
+              <p>
+                1Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio s.Lorem ipsum dolor sit amet, consectetur adipi elit. Nunc vulputate libero et velit interdum...
+              </p>
+            </div>
+            <div class="slide-detail slide-detail-2">
+              <div class="slide-detail-title">
+                <h3>Service center</h3>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="16" cy="16" r="16" fill="#1464F4" fill-opacity="0.03"/>
+                  <circle cx="16" cy="16" r="15.5" stroke="#3C3C3C" stroke-opacity="0.3"/>
+                  <line x1="16.5" y1="11" x2="16.5" y2="22" stroke="#1464F4"/>
+                  <line x1="11" y1="16.5" x2="22" y2="16.5" stroke="#1464F4"/>
+                </svg>
+              </div>
+              <p>
+                2Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio s.Lorem ipsum dolor sit amet, consectetur adipi elit. Nunc vulputate libero et velit interdum...
+              </p>
+            </div>
+            <div class="slide-detail slide-detail-3">
+              <div class="slide-detail-title">
+                <h3>Collision center</h3>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="16" cy="16" r="16" fill="#1464F4" fill-opacity="0.03"/>
+                  <circle cx="16" cy="16" r="15.5" stroke="#3C3C3C" stroke-opacity="0.3"/>
+                  <line x1="16.5" y1="11" x2="16.5" y2="22" stroke="#1464F4"/>
+                  <line x1="11" y1="16.5" x2="22" y2="16.5" stroke="#1464F4"/>
+                </svg>
+              </div>
+              <p>
+                3Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio s.Lorem ipsum dolor sit amet, consectetur adipi elit. Nunc vulputate libero et velit interdum...
+              </p>
+            </div>
+            <div class="swiper-pagination block-service-pagination"></div>
+          </div>
+          <div class="field-content-mobile d-block d-lg-none">
+            <div class="service-container">
+              <ul class="service-list">
+                <li class="service-item">
+                  <div class="service-item-header">
+                    <div class="header-left">
+                      <svg class="arrow" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.787 9.15041C15.503 9.43439 15.0425 9.43443 14.7585 9.15036L8.0002 2.39191L1.24156 9.15041C0.957582 9.43439 0.497073 9.43443 0.213049 9.15036C-0.0709755 8.86634 -0.0709755 8.40588 0.213049 8.12185L7.48597 0.849126C7.62236 0.712738 7.80733 0.636131 8.0002 0.636131C8.19307 0.636131 8.37809 0.712786 8.51443 0.849174L15.787 8.1219C16.071 8.40588 16.071 8.86639 15.787 9.15041Z" fill="#3C3C3C"/>
+                      </svg>
+                      <h3>Over the air update</h3>
+                    </div>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle opacity="0.56" cx="16" cy="16" r="15.5" fill="#1464F4" fill-opacity="0.03" stroke="black"/>
+                      <line x1="16.5" y1="11" x2="16.5" y2="22" stroke="#1464F4"/>
+                      <line x1="11" y1="16.5" x2="22" y2="16.5" stroke="#1464F4"/>
+                    </svg>
+                  </div>
+                  <div class="service-item-detail">
+                    <p>Lorem Ipsum is simplLorem Ipsum is simply duas text of the printing and typesa</p>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="service-item-header">
+                    <div class="header-left">
+                      <svg class="arrow" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.787 9.15041C15.503 9.43439 15.0425 9.43443 14.7585 9.15036L8.0002 2.39191L1.24156 9.15041C0.957582 9.43439 0.497073 9.43443 0.213049 9.15036C-0.0709755 8.86634 -0.0709755 8.40588 0.213049 8.12185L7.48597 0.849126C7.62236 0.712738 7.80733 0.636131 8.0002 0.636131C8.19307 0.636131 8.37809 0.712786 8.51443 0.849174L15.787 8.1219C16.071 8.40588 16.071 8.86639 15.787 9.15041Z" fill="#3C3C3C"/>
+                      </svg>
+                      <h3>Mobile service</h3>
+                    </div>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle opacity="0.56" cx="16" cy="16" r="15.5" fill="#1464F4" fill-opacity="0.03" stroke="black"/>
+                      <line x1="16.5" y1="11" x2="16.5" y2="22" stroke="#1464F4"/>
+                      <line x1="11" y1="16.5" x2="22" y2="16.5" stroke="#1464F4"/>
+                    </svg>
+                  </div>
+                  <div class="service-item-detail">
+                    <picture>
+                      <source srcset="./images/ovta-update.webp" type="image/webp" width="100%" height="100%" alt="" />
+                      <source srcset="./images/ovta-update.jpg" alt="" />
+                      <img src="./images/ovta-update.jpg" alt="" />
+                  </picture>
+                    <p>Lorem Ipsum is simplLorem Ipsum is simply duas text of the printing and typesa</p>
+                </div>
+                </li>
+                <li class="service-item">
+                  <div class="service-item-header">
+                    <div class="header-left">
+                      <svg class="arrow" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.787 9.15041C15.503 9.43439 15.0425 9.43443 14.7585 9.15036L8.0002 2.39191L1.24156 9.15041C0.957582 9.43439 0.497073 9.43443 0.213049 9.15036C-0.0709755 8.86634 -0.0709755 8.40588 0.213049 8.12185L7.48597 0.849126C7.62236 0.712738 7.80733 0.636131 8.0002 0.636131C8.19307 0.636131 8.37809 0.712786 8.51443 0.849174L15.787 8.1219C16.071 8.40588 16.071 8.86639 15.787 9.15041Z" fill="#3C3C3C"/>
+                      </svg>
+                      <h3>Service center</h3>
+                    </div>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle opacity="0.56" cx="16" cy="16" r="15.5" fill="#1464F4" fill-opacity="0.03" stroke="black"/>
+                      <line x1="16.5" y1="11" x2="16.5" y2="22" stroke="#1464F4"/>
+                      <line x1="11" y1="16.5" x2="22" y2="16.5" stroke="#1464F4"/>
+                    </svg>
+                  </div>
+                  <div class="service-item-detail">
+                    <p>Lorem Ipsum is simplLorem Ipsum is simply duas text of the printing and typesa</p>
+                  </div>
+                </li>
+                <li class="service-item">
+                  <div class="service-item-header">
+                    <div class="header-left">
+                      <svg class="arrow" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.787 9.15041C15.503 9.43439 15.0425 9.43443 14.7585 9.15036L8.0002 2.39191L1.24156 9.15041C0.957582 9.43439 0.497073 9.43443 0.213049 9.15036C-0.0709755 8.86634 -0.0709755 8.40588 0.213049 8.12185L7.48597 0.849126C7.62236 0.712738 7.80733 0.636131 8.0002 0.636131C8.19307 0.636131 8.37809 0.712786 8.51443 0.849174L15.787 8.1219C16.071 8.40588 16.071 8.86639 15.787 9.15041Z" fill="#3C3C3C"/>
+                      </svg>
+                      <h3>Collision center</h3>
+                    </div>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle opacity="0.56" cx="16" cy="16" r="15.5" fill="#1464F4" fill-opacity="0.03" stroke="black"/>
+                      <line x1="16.5" y1="11" x2="16.5" y2="22" stroke="#1464F4"/>
+                      <line x1="11" y1="16.5" x2="22" y2="16.5" stroke="#1464F4"/>
+                    </svg>
+                  </div>
+                  <div class="service-item-detail">
+                    <p>Lorem Ipsum is simplLorem Ipsum is simply duas text of the printing and typesa</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="container">
+      <div id="footer-top">
+        <div class="row">
+          <div class="col-12 col-lg-2">
+            <div id="footer-logo">
+              <a href="https://stg-cms-v2.vinfastauto.us/">
+                <img
+                  class="logo"
+                  src="./images/footer-logo.png"
+                  alt="VinFast"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="footer-nav">
+              <ul class="navbar-container">
+                <li class="navbar-container-items">
+                  <a href="/story" class="link-effect link-effect-hover"
+                    ><span class="text-items-nav"
+                      >About VinFast</span
+                    ></a
+                  >
+                </li>
+                <li class="navbar-container-items">
+                  <a
+                    href="https://vingroup.net/en/about"
+                    class="link-effect link-effect-hover"
+                    ><span class="text-items-nav"
+                      >About Vingroup</span
+                    ></a
+                  >
+                </li>
+                <li class="navbar-container-items">
+                  <a
+                    href="/events"
+                    class="link-effect link-effect-hover"
+                    ><span class="text-items-nav">Events</span></a
+                  >
+                </li>
+                <li class="navbar-container-items">
+                  <a
+                    href="/newsroom"
+                    class="link-effect link-effect-hover"
+                    ><span class="text-items-nav">Newsroom</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="footer-nav">
+              <ul class="navbar-container">
+                <li class="navbar-container-items">
+                  <a
+                    href="/careers"
+                    class="link-effect link-effect-hover"
+                    ><span class="text-items-nav">Careers</span></a
+                  >
+                </li>
+                <li class="navbar-container-items">
+                  <a
+                    href="/battery-subscription"
+                    class="link-effect link-effect-hover"
+                    ><span class="text-items-nav"
+                      >Battery Subscription</span
+                    ></a
+                  >
+                </li>
+                <li class="navbar-container-items">
+                  <a
+                    href="https://vfuat-vinfastuat.cs59.force.com/TestDriveRequest/s/?country_lang=us_eng"
+                    class="link-effect link-effect-hover"
+                    ><span class="text-items-nav">Test Drive</span></a
+                  >
+                </li>
+                <li class="navbar-container-items">
+                  <a
+                    href="https://vinfirst.vinfastauto.us/"
+                    class="link-effect link-effect-hover"
+                    ><span class="text-items-nav">VinFirst NFT</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="footer-nav">
+              <ul class="navbar-container">
+                <li class="navbar-container-items">
+                  <a
+                    href="/contact"
+                    class="link-effect link-effect-hover"
+                    ><span class="text-items-nav">Contact Us</span></a
+                  >
+                </li>
+                <li class="navbar-container-items">
+                  <a href="/faq" class="link-effect link-effect-hover"
+                    ><span class="text-items-nav">FAQ</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer-bottom" class="clearfix">
+        <div id="block-footer-copyright" class="pull-left">
+          <div class="block-content">
+            <ul class="clearfix">
+              <li>
+                <span>© 2022 VinFast. All rights reserved.</span>
+              </li>
+              <li>
+                <a
+                  class="link-effect link-effect-hover"
+                  href="/privacy-policy"
+                >
+                  <span>Privacy Policy</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="link-effect link-effect-hover"
+                  href="/terms-of-use"
+                >
+                  <span>Terms of Use</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="block-footer-social-links" class="pull-right">
+          <div class="block-content">
+            <ul class="clearfix">
+              <li>
+                <a
+                  class="icon-instagram"
+                  target="_blank"
+                  href="https://www.instagram.com/vinfastus/"
+                >
+                  <img
+                    src="./images/icons/icon-insta.svg"
+                    alt="Instagram"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="icon-facebook"
+                  target="_blank"
+                  href="https://facebook.com/VinFastUS/"
+                >
+                  <img
+                    src="./images/icons/icon-facebook.svg"
+                    alt="Facebook"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="icon-twitter"
+                  target="_blank"
+                  href="https://twitter.com/VinFastUS"
+                >
+                  <img
+                    src="./images/icons/icon-twitter.svg"
+                    alt="Twitter"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="icon-youtube"
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UCVIbY8CbGjPusSau9kjJMyA"
+                >
+                  <img
+                    src="./images/icons/icon-youtube.svg"
+                    alt="Youtube"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  class="icon-linkedin"
+                  target="_blank"
+                  href="https://www.linkedin.com/company/vinfast-us"
+                >
+                  <img
+                    src="./images/icons/icon-linkedin.svg"
+                    alt="Linkedin"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
